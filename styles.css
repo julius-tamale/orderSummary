@@ -15,11 +15,11 @@
     box-sizing: border-box;
 }
 
-button {
-    font: inherit;
-}
-
 body {
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,114 @@ body {
 }
 
 main {
+    max-height: 70vh;
     width: 90%;
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
+    border-radius: 15px;
+    background-color: var(--v-pale-blue);
+    box-shadow: 4px 0px 10px 2px var(--desaturated-blue);
+}
+
+.listener-img {
+    width: 100%;
+    background-image: url('images/illustration-hero.svg');
+    background-size: cover;
+    height: 20vh;
+    /* border: 5px solid; */
+    margin-bottom: 1em;
+    border-radius: 15px 15px 0 0;
+}
+
+.dblue {
+    color: var(--dark-blue);
+}
+
+.grey {
+    color: var(--desaturated-blue);
+}
+/* === price div styles start === */
+.plan-price-div {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.para {
+    padding: 0 0.85rem;
+    margin-bottom: 0.5em;
+}
+
+.plan-price-div div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.plan-price-div .dblue {
+    font-weight: 700;
+    display: block;
+    margin-top: 5px;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+/* === price div styles end === */
+
+
+/* === button styles start === */
+.btn-div {
+    width: 90%;
+    margin: 0.75em auto;
+}
+
+button {
+    font: inherit;
+    display: block;
+    margin: 0 auto;border: none;
+    background: none;
+}
+
+button:first-of-type {
+    background-color: var(--bright-blue);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 0.75em;
+    color: var(--v-pale-blue);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:first-of-type:hover {
+    opacity: 0.75;
+}
+
+.button:nth-of-type(2) {
+    margin-bottom: 1rem;
+}
+
+button:nth-of-type(2):hover {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+/* === button styles end ==== */
+
+@media screen and (min-width: 1023px){
+    body {
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
 }
