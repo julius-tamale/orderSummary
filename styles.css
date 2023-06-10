@@ -44,7 +44,7 @@ main {
     background-size: cover;
     height: 20vh;
     /* border: 5px solid; */
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     border-radius: 15px 15px 0 0;
 }
 
@@ -62,6 +62,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .para {
@@ -100,13 +101,15 @@ a:hover {
 /* === button styles start === */
 .btn-div {
     width: 90%;
-    margin: 0.75em auto;
+    margin: 0 auto;
+    padding-bottom: 0.75em;
 }
 
 button {
     font: inherit;
     display: block;
-    margin: 0 auto;border: none;
+    margin: 0 auto;
+    border: none;
     background: none;
 }
 
@@ -137,6 +140,32 @@ button:nth-of-type(2):hover {
 
 @media screen and (min-width: 1023px){
     body {
-        background-image: url(/images/pattern-background-desktop.svg);
+        background-image: url('images/pattern-background-desktop.svg');
     }
+}
+
+.after-click {
+    background-image: url('images/confetti-g72bf0d933_1280.jpg');
+    background-size: cover;
+    min-height: 70vh;
+    width: 100%;
+    /* max-width: 350px; */
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after-click-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, maroon, royalblue, maroon);
+    font-size: 5rem;
+    font-variant: small-caps;
+}
+
+.sad {
+    background-image: url('images/man-g96d8b0b21_1280.jpg');   
 }
